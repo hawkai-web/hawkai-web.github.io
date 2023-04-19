@@ -1,6 +1,6 @@
 {
   "name": "hawkai-web.github.io",
-  "homepage": "https://hawkai-web.github.io",
+  "homepage": "https://hawkai-web.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
