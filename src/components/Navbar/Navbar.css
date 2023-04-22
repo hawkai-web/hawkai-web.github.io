@@ -30,13 +30,38 @@
   background-color: #61bfff !important;
 }
 
+.appdrawer{
+  background-color: rgb(40 44 52) !important;
+}
+
+.drawerContent{
+  background-color: rgb(40 44 52) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: left !important;
+  margin-top: 16%;
+  padding: 10% !important;
+}
+
+.mobileBtn{
+  color: white !important;
+  text-transform: none !important;
+  padding: 2% !important;
+  background-color: transparent !important;
+  width:inherit !important;
+}
+
+hr{
+  border-bottom: 1px solid rgba(177, 177, 177, 0.673) !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .logo {
       animation: App-logo-spin infinite 10s linear;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 599px) {
     .brand{
       display: none !important;
     }
