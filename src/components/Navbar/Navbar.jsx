@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Box, Toolbar, styled, Typography, Button } from '@mui/material';
 import logo from '../../logo.svg';
 import './Navbar.css';
-import { BorderAllRounded } from '@mui/icons-material';
+
 
 const StyledToolbar = styled(Toolbar) ({
   display: 'flex',
@@ -44,8 +44,8 @@ const Navbar = () => {
           </Box>
           
           <Navigation>
-            <StyledButton href='/'>Home</StyledButton>
-            <StyledButton href='/#/status'>Status</StyledButton>
+            <StyledButton href='/' className='btn'>Home</StyledButton>
+            <StyledButton href='/#/status' className='btn'>Status</StyledButton>
             <StyledButtonContained href='/#/contact' className='btnContained'>Contact</StyledButtonContained>
           </Navigation>
 

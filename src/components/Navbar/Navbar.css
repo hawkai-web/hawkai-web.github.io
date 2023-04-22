@@ -2,6 +2,18 @@
     box-shadow: none !important;
 }
 
+.btn:hover{
+  background-color: transparent !important;
+}
+
+.btn{
+  text-transform: none !important;
+}
+
+.btnContained{
+  text-transform: none !important;
+}
+
 .brand{
   font-weight: 700 !important;
   font-size: 1.3em !important;
