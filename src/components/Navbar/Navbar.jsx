@@ -1,29 +1,58 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-
-import './Navbar.css';
+import React from 'react';
+import { AppBar, Box, Toolbar, styled, Typography, Button } from '@mui/material';
 import logo from '../../logo.svg';
+import './Navbar.css';
+import { BorderAllRounded } from '@mui/icons-material';
 
-export default function ButtonAppBar() {
+const StyledToolbar = styled(Toolbar) ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  backgroundColor: 'rgb(40 44 52)',
+  boxShadow: 'none !important'
+})
+
+
+const Navigation = styled(Box) ({
+
+})
+
+const StyledButton = styled(Button) ({
+  color: '#fff',
+  textTransform: 'none',
+  marginInline: '0.5em'
+})
+
+const StyledButtonContained = styled(Button) ({
+  color: '#fff',
+  textTransform: 'none',
+  marginInline: '0.5em',
+  backgroundColor: '#61bfff',
+  borderRadius: '50em',
+  paddingInline: '1em'
+})
+
+const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className='navbar'>
-        <Toolbar>
-          <img src={logo} className='logo' />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            HawkAI
-          </Typography>
-          <Button color="inherit" href='/' className='BTN'>Home</Button>
-          <Button color="inherit" href='/#/status' className='BTN'>Status</Button>
-          <Button color="inherit" href='/#/contact' className='contact-btn BTN'>Contact</Button>
-        </Toolbar>
+    <Box>
+      <AppBar className='navbar'>
+        <StyledToolbar>
+
+          
+          <Box>
+            <img src={logo} className='logo' width="38" height="32" alt='logo' />
+            <span className='brand' sx={{ display:{xs:'none', sm:'block'}}} >HawkAI</span>
+          </Box>
+          
+          <Navigation>
+            <StyledButton href='/'>Home</StyledButton>
+            <StyledButton href='/#/status'>Status</StyledButton>
+            <StyledButtonContained href='/#/contact' className='btnContained'>Contact</StyledButtonContained>
+          </Navigation>
+
+        </StyledToolbar>
       </AppBar>
     </Box>
-  );
+  )
 }
+
+export default Navbar
