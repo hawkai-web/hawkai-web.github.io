@@ -1,0 +1,12 @@
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3.5rem;
+}
+
+.contact-btn{
+    background-color: #61dafb !important;
+    border-radius: 50em !important;
+    padding-inline: 1% !important
+}

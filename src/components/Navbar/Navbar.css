@@ -1,0 +1,14 @@
+.navbar{
+    background-color: rgb(40,44,52) !important;
+    box-shadow: none !important;
+}
+
+.logo{
+    width: 5% !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: App-logo-spin infinite 15s linear;
+    }
+  }
