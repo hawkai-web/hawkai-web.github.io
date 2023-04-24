@@ -79,7 +79,7 @@ hr{
   }
 
 @media only screen and (max-width: 699px) {
-  .nav-btn{
+  .nav-btnMobile{
     display: none !important;
   }
   .menuIcon{

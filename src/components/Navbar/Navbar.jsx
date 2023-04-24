@@ -76,15 +76,15 @@ const Navbar = () => {
           </Box>
           
           <Navigation>
-            <StyledButton disableRipple href='/' className='btn nav-btn'>Home</StyledButton>
-            <StyledButton disableRipple href='/#/' className='btn nav-btn' >Features</StyledButton>
-            <StyledButton disableRipple href='/#/' className='btn nav-btn' >About</StyledButton>
-            <StyledButton disableRipple href='/#/' className='btn nav-btn' >Survey</StyledButton>
-            <StyledButton disableRipple href='/#/contact' className='btn nav-btn' >Contact</StyledButton>
+            <StyledButton disableRipple href='/' className='btn nav-btn nav-btnMobile'>Home</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Features</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >About</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Survey</StyledButton>
+            <StyledButton disableRipple href='/#/contact' className='btn nav-btn nav-btnMobile' >Contact</StyledButton>
           </Navigation>
 
           <Navigation>
-            <StyledButtonContained href='/#/status' className='btnContained nav-btn'>App Status</StyledButtonContained>
+            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile'>App Status</StyledButtonContained>
             <MenuIcon sx={{color:'#000' }} onClick={() => setIsDrawerOpen(true)} className='menuIcon'></MenuIcon>
           </Navigation>
 
