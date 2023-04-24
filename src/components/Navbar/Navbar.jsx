@@ -10,7 +10,7 @@ import './Navbar.css';
 const StyledToolbar = styled(Toolbar) ({
   display: 'flex',
   justifyContent: 'space-between',
-  backgroundColor: 'rgb(40 44 52)',
+  backgroundColor: 'rgb(240 236 230)',
   boxShadow: 'none !important'
 })
 
@@ -20,9 +20,10 @@ const Navigation = styled(Box) ({
 })
 
 const StyledButton = styled(Button) ({
-  color: '#fff',
+  color: '#000',
   textTransform: 'none',
   marginInline: '0.5em',
+  backgroundColor: 'transparent'
 })
 
 const StyledButtonContained = styled(Button) ({
@@ -71,14 +72,20 @@ const Navbar = () => {
           
           <Box>
             <img src={logo} className='logo' width="38" height="32" alt='logo' />
-            <span className='brand' sx={{ display:{xs:'none', sm:'block'}}} >HawkAI</span>
+            <span className='brand' >HawkAI</span>
           </Box>
           
           <Navigation>
-            <StyledButton href='/' className='btn' sx={{ display:{ xs:'none', sm:'inline-block' } }}>Home</StyledButton>
-            <StyledButton href='/#/status' className='btn' sx={{ display:{ xs:'none', sm:'inline-block' } }}>Status</StyledButton>
-            <StyledButtonContained href='/#/contact' className='btnContained' sx={{ display:{ xs:'none', sm:'inline-block' } }}>Contact</StyledButtonContained>
-            <MenuIcon sx={{ display:{ xs:'block', sm:'none' } }} onClick={() => setIsDrawerOpen(true)}></MenuIcon>
+            <StyledButton disableRipple href='/' className='btn nav-btn'>Home</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn' >Features</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn' >About</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn' >Survey</StyledButton>
+            <StyledButton disableRipple href='/#/contact' className='btn nav-btn' >Contact</StyledButton>
+          </Navigation>
+
+          <Navigation>
+            <StyledButtonContained href='/#/status' className='btnContained nav-btn'>App Status</StyledButtonContained>
+            <MenuIcon sx={{color:'#000' }} onClick={() => setIsDrawerOpen(true)} className='menuIcon'></MenuIcon>
           </Navigation>
 
         </StyledToolbar>
@@ -90,13 +97,13 @@ const Navbar = () => {
        open = {isDrawerOpen}
        onClose={() => setIsDrawerOpen(false)}
        sx={{
-        display: { xs: 'block', sm: 'none' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '100%', backgroundColor:'rgb(40 44 52)' },
+        display: { xs: 'block', md: 'none' },
+        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '100%', backgroundColor:'rgb(240 236 232)' },
       }}
       >
         <Box className='appdrawer'>
-          <AppBar className='navbar' sx={{backgroundColor:'rgb(40 44 52)'}}>
-            <StyledToolbar sx={{backgroundColor:'rgb(40 44 52)'}}>
+          <AppBar className='navbar' sx={{backgroundColor:'rgb(240 236 232)'}}>
+            <StyledToolbar sx={{backgroundColor:'rgb(240 236 232)'}}>
 
               
               <Box>
@@ -105,7 +112,7 @@ const Navbar = () => {
               </Box>
               
               <Navigation>
-                <CloseIcon sx={{ display:{ xs:'block', sm:'none' } }} onClick={() => setIsDrawerOpen(false)}></CloseIcon>
+                <CloseIcon onClick={() => setIsDrawerOpen(false)} className='menuIcon'></CloseIcon>
               </Navigation>
 
             </StyledToolbar>
