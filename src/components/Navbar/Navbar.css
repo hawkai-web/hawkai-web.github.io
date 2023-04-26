@@ -1,5 +1,6 @@
 .navbar{
     box-shadow: none !important;
+    background-color: #fff !important;
 }
 
 .btn:hover{
@@ -12,6 +13,8 @@
 
 .btnContained{
   text-transform: none !important;
+  background-color: #cccccc !important;
+  color: #000 !important;
 }
 
 .brand{
@@ -28,7 +31,7 @@
 }
 
 .btnContained:hover{
-  background-color: #61bfff !important;
+  background-color: #cccccc !important;
 }
 
 .appdrawer{

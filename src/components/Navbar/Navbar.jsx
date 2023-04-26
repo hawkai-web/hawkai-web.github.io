@@ -10,7 +10,7 @@ import './Navbar.css';
 const StyledToolbar = styled(Toolbar) ({
   display: 'flex',
   justifyContent: 'space-between',
-  backgroundColor: 'rgb(240 236 230)',
+  backgroundColor: '#fff',
   boxShadow: 'none !important'
 })
 
@@ -66,7 +66,7 @@ const Navbar = () => {
   return (
     <Box>
       
-      <AppBar className='navbar'>
+      <AppBar className='navbar' position='static'>
         <StyledToolbar>
 
           

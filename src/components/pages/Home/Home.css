@@ -1,12 +1,48 @@
-h1{
-    color: black;
-    text-align: center;
-    margin-top: 20%;
-    font-size: 3.5rem;
+.hero{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1.8% !important;
 }
 
-.contact-btn{
-    background-color: #61dafb !important;
-    border-radius: 50em !important;
-    padding-inline: 1% !important
+.heroMain{
+    padding: 1%;
+    border-radius: 2em;
+    background-color: #cccccc;
+    padding-top: 1% !important;
 }
+
+.tagline{
+    font-size: 5em;
+    text-align: center;
+    font-weight: 900;
+    z-index: 1000 !important;
+}
+
+.phone{
+    background-color: #acacac;
+    min-height: 32vh;
+    border-radius: 1em;
+    /* max-width: 50%; */
+    margin-top: -15% !important;
+    z-index: -100 !important;
+    opacity: 85%;
+}
+
+.phoneContainer{
+    align-items: center !important;
+    align-content:center !important;
+}
+
+.brandAD{
+    text-align: center;
+    margin-top: 5%;
+    align-items: center;
+    align-content: center;
+}
+
+.brandADText{
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
