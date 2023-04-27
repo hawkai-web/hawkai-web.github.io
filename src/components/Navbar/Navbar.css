@@ -13,12 +13,12 @@
 
 .btnContained{
   text-transform: none !important;
-  background-color: var(--orange) !important;
-  color: #000 !important;
-  font-weight: 300 !important;
-  padding-block: 8% !important;
-  padding-inline: 10% !important;
+  background-color: var(--dark) !important;
+  color: #fff !important;
+  /* padding-block: 8% !important;
+  padding-inline: 15% !important; */
   text-align: center !important;
+  font-weight: 300 !important;
 }
 
 .brand{
@@ -28,6 +28,7 @@
   display: inline-block !important;
   font-family: var(--classicFont);
   color:#000;
+  text-decoration: none !important;
 }
 
 .logo{
@@ -35,28 +36,32 @@
 }
 
 .btnContained:hover{
-  background-color: var(--orange) !important;
+  background-color: var(--dark) !important;
 }
 
 .appdrawer{
-  background-color: rgb(240 236 230)!important;
+  background-color: var(--bodyBG)!important;
 }
 
 .drawerContent{
-  background-color: rgb(240 236 230)!important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: left !important;
+  background-color: var(--bodyBG)!important;
+  text-align: start !important;
   margin-top: 16%;
   padding: 10% !important;
+  padding-inline: 15% !important;
+  display: grid;
 }
 
 .mobileBtn{
   color: #000 !important;
   text-transform: none !important;
+  font-size: 1.2em !important;
   padding: 2% !important;
+  justify-content: start !important;
   background-color: transparent !important;
-  width:inherit !important;
+  text-align: left !important;
+  margin-bottom: 5% !important;
+  width: 100% !important;
 }
 
 .nav-btn{
@@ -74,8 +79,15 @@
   color: #000 !important;
 }
 
-hr{
-  border-bottom: 1px solid rgba(177, 177, 177, 0.673) !important;
+.launchIcon{
+  font-weight: 300 !important;
+  font-size: 1em !important;
+  vertical-align: middle !important;
+}
+
+.navarrowicon{
+  position: absolute;
+  right: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -4,6 +4,7 @@ import { AppBar, Box, Toolbar, styled, Drawer, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import LaunchIcon from '@mui/icons-material/Launch';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import logo from '../../assets/logo.svg';
 import './Navbar.css';
 
@@ -72,11 +73,11 @@ const Navbar = () => {
           
           <Box>
             <img src={logo} className='logo' width="38" height="32" alt='logo' />
-            <span className='brand' >HawkAI</span>
+            <a className='brand' href='/'>HawkAI</a>
           </Box>
           
           <Navigation>
-            <StyledButton disableRipple href='/' className='btn nav-btn nav-btnMobile'>Home</StyledButton>
+            <StyledButton disableRipple href='/' className='btn nav-btn nav-btnMobile'>Home </StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Features</StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >About</StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Survey</StyledButton>
@@ -84,7 +85,7 @@ const Navbar = () => {
           </Navigation>
 
           <Navigation>
-            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile'>AppStatus</StyledButtonContained>
+            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile' size='medium'>APP STATUS{/*<LaunchIcon className='launchIcon' ></LaunchIcon>*/}</StyledButtonContained>
             <MenuIcon sx={{color:'#000' }} onClick={() => setIsDrawerOpen(true)} className='menuIcon'></MenuIcon>
           </Navigation>
 
@@ -98,12 +99,12 @@ const Navbar = () => {
        onClose={() => setIsDrawerOpen(false)}
        sx={{
         display: { xs: 'block', md: 'none' },
-        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '100%', backgroundColor:'rgb(240 236 232)' },
+        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: '100%', backgroundColor:'rgb(232 225 215)' },
       }}
       >
         <Box className='appdrawer'>
-          <AppBar className='navbar' sx={{backgroundColor:'rgb(240 236 232)'}}>
-            <StyledToolbar sx={{backgroundColor:'rgb(240 236 232)'}}>
+          <AppBar className='navbar' sx={{backgroundColor:'rgb(232 225 215)'}}>
+            <StyledToolbar sx={{backgroundColor:'rgb(232 225 215)'}}>
 
               
               <Box>
@@ -117,9 +118,12 @@ const Navbar = () => {
 
             </StyledToolbar>
             <Box className='drawerContent'>
-                <Button href='/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Home</Button> <hr/><br/>
-                <Button href='/#/status' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Status</Button> <hr/><br/>
-                <Button href='/#/contact' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Contact</Button> <hr/><br/>
+                <Button disableRipple href='/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Home <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Features <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/about' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>About <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Survey <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/contact' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Contact <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/status' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>App Status <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
             </Box>
           </AppBar>
         </Box>  

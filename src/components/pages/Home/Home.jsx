@@ -9,16 +9,28 @@ export default function Home() {
       <div className="hero">
 
         <section className='heroMain'>
-          <Grid container>
+
+          <Grid container className='hiddenformobile'>
             <Grid item xs={7}>
-            <h1 className="tagline">Capturing moments so you dont have to!</h1>
-            <Button className='btnFilled heroBtn'>Get App</Button>
+            <h1 className="tagline">Capturing moments so <span>you</span> dont have to!</h1>
+            <Button className='btnFilled heroBtn'>EXPLORE</Button>
             <Button className='btnOutline heroBtn'>Info</Button>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={5} className="hiddenformobile">
                 <img src={cameraMan} />
             </Grid>
           </Grid>
+
+          <Grid container className="hiddenforlaptop">
+            <Grid item xs={12}>
+            <h1 className="tagline">Capturing moments so <span>you</span> dont have to!</h1>
+            <div className='btnHoldermob'>
+              <Button className='btnFilled heroBtn'>EXPLORE</Button>
+              <Button className='btnOutline heroBtn'>Info</Button>
+            </div>
+            </Grid>
+          </Grid>
+
         </section>
 
 
