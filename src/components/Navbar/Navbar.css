@@ -1,6 +1,6 @@
 .navbar{
     box-shadow: none !important;
-    background-color: #fff !important;
+    background-color: var(--bodyBG) !important;
 }
 
 .btn:hover{
@@ -13,16 +13,20 @@
 
 .btnContained{
   text-transform: none !important;
-  background-color: #cccccc !important;
+  background-color: var(--orange) !important;
   color: #000 !important;
+  font-weight: 300 !important;
+  padding-block: 8% !important;
+  padding-inline: 10% !important;
+  text-align: center !important;
 }
 
 .brand{
-  font-weight: 700 !important;
+  font-weight: 900 !important;
   font-size: 1.3em !important;
-  letter-spacing: 0.1rem !important;
   vertical-align: middle !important;
   display: inline-block !important;
+  font-family: var(--classicFont);
   color:#000;
 }
 
@@ -31,7 +35,7 @@
 }
 
 .btnContained:hover{
-  background-color: #cccccc !important;
+  background-color: var(--orange) !important;
 }
 
 .appdrawer{
@@ -62,7 +66,6 @@
 }
 
 .nav-btn:hover{
-  background-color: rgba(226, 221, 221, 0.609) !important;
   transition: 0.2s ease-in-out !important;
   transform: translateY(10%) !important;
 }

@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { AppBar, Box, Toolbar, styled, Drawer, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../logo.svg';
+import LaunchIcon from '@mui/icons-material/Launch';
+import logo from '../../assets/logo.svg';
 import './Navbar.css';
 
 
 const StyledToolbar = styled(Toolbar) ({
   display: 'flex',
   justifyContent: 'space-between',
-  backgroundColor: '#fff',
   boxShadow: 'none !important'
 })
 
@@ -84,7 +84,7 @@ const Navbar = () => {
           </Navigation>
 
           <Navigation>
-            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile'>App Status</StyledButtonContained>
+            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile'>AppStatus</StyledButtonContained>
             <MenuIcon sx={{color:'#000' }} onClick={() => setIsDrawerOpen(true)} className='menuIcon'></MenuIcon>
           </Navigation>
 

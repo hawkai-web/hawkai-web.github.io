@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material"; 
+import { Grid, Button } from "@mui/material"; 
+import cameraMan from '../../../assets/home/cameraMan.svg';
 import './Home.css';
 
 export default function Home() {
@@ -8,36 +9,16 @@ export default function Home() {
       <div className="hero">
 
         <section className='heroMain'>
-          <h1 className="tagline">Capturing moments <br/> so you dont have to!</h1>
-        </section>
-        <section className="phoneContainer">
           <Grid container>
-            <Grid item xs={2} center>
-
+            <Grid item xs={7}>
+            <h1 className="tagline">Capturing moments so you dont have to!</h1>
+            <Button className='btnFilled heroBtn'>Get App</Button>
+            <Button className='btnOutline heroBtn'>Info</Button>
             </Grid>
-            <Grid item xs={8} center>
-            <div className="phone"></div>
-            </Grid>
-            <Grid item xs={2} center>
-
+            <Grid item xs={5}>
+                <img src={cameraMan} />
             </Grid>
           </Grid>
-          
-        </section>
-
-        <section className="brandAD">
-          <div className='brandADWrapper'>
-            <h1 className="brandADText">Hawk
-              <div className="brandADInner">
-                <span>
-                  eye <br/>
-                  AI
-                  </span>
-              </div>
-            </h1>
-          </div>
-          
-          
         </section>
 
 

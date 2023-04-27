@@ -7,42 +7,36 @@
 .heroMain{
     padding: 1%;
     border-radius: 2em;
-    background-color: #cccccc;
     padding-top: 1% !important;
 }
 
 .tagline{
-    font-size: 5em;
-    text-align: center;
+    font-size: 4.5em;
+    text-align: left;
     font-weight: 900;
-    z-index: 1000 !important;
+    font-family: var(--classicFont);
+    text-transform: uppercase;
 }
 
-.phone{
-    background-color: #acacac;
-    min-height: 32vh;
-    border-radius: 1em;
-    /* max-width: 50%; */
-    margin-top: -15% !important;
-    z-index: -100 !important;
-    opacity: 85%;
+.heroBtn{
+    background-color: aquamarine !important;
+    /* margin-inline: 2% !important; */
+    border-radius: 50em !important;
+    padding-inline: 5% !important;
+    padding-block: 2.7% !important;
+    margin-inline: 1% !important;
 }
 
-.phoneContainer{
-    align-items: center !important;
-    align-content:center !important;
+.btnOutline{
+    background-color: transparent !important;
+    border: 2px solid var(--dark) !important;
+    color: #000 !important;
 }
 
-.brandAD{
-    text-align: center;
-    margin-top: 5%;
-    align-items: center;
-    align-content: center;
+.btnFilled{
+    background-color: var(--dark) !important;
+    color: #fff !important;
 }
 
-.brandADText{
-    font-size: 3em;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
+
 
