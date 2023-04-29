@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { AppBar, Box, Toolbar, styled, Drawer, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import LaunchIcon from '@mui/icons-material/Launch';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import logo from '../../assets/logo.svg';
 import './Navbar.css';
@@ -80,7 +79,7 @@ const Navbar = () => {
             <StyledButton disableRipple href='/' className='btn nav-btn nav-btnMobile'>Home </StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Features</StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >About</StyledButton>
-            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Survey</StyledButton>
+            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Gallery</StyledButton>
             <StyledButton disableRipple href='/#/contact' className='btn nav-btn nav-btnMobile' >Contact</StyledButton>
           </Navigation>
 
@@ -121,7 +120,7 @@ const Navbar = () => {
                 <Button disableRipple href='/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Home <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
                 <Button disableRipple href='/#/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Features <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
                 <Button disableRipple href='/#/about' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>About <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
-                <Button disableRipple href='/#/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Survey <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
+                <Button disableRipple href='/#/' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Gallery <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
                 <Button disableRipple href='/#/contact' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>Contact <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
                 <Button disableRipple href='/#/status' className='mobileBtn' onClick={() => setIsDrawerOpen(false)}>App Status <ArrowForwardIosRoundedIcon className='navarrowicon' fontSize='small'></ArrowForwardIosRoundedIcon></Button> 
             </Box>

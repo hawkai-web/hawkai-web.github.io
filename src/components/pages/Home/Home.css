@@ -20,11 +20,9 @@
 
 .heroBtn{
     background-color: aquamarine !important;
-    /* margin-inline: 2% !important; */
     border-radius: 50em !important;
     padding-inline: 5% !important;
     padding-block: 2.7% !important;
-    margin-inline: 1% !important;
 }
 
 .btnOutline{
@@ -42,6 +40,68 @@
     text-decoration: underline;
     text-decoration-color: var(--orange);
 }
+
+.prodDesc{
+    margin-top: 10%;
+    text-align: left;
+}
+
+.prodDescHeading{
+    font-size: 2em;
+    margin-top: 2%;
+    font-family: var(--classicFont);
+    font-weight: 600;
+}
+
+.prodDesc p{
+    font-size: 1.1em;
+}
+
+.headChip{
+    letter-spacing: 5px;
+    font-size: 0.8em !important;
+    text-transform: uppercase;
+}
+
+.chipHR{
+    display: inline-block;
+    width: 12%;
+    vertical-align: middle;
+    border: 0.7px solid var(--dark)
+}
+
+.columnText{
+    line-height: 1.7em;
+}
+
+.columnBtn{
+    text-decoration: none;
+    color: #de6b94;
+    display: inline-block;
+}
+
+.columnBtnarrow{
+    font-size: 1em !important;
+    vertical-align: middle;
+    display: inline-block !important;
+    transition: 0.3s ease-in !important;
+}
+
+.columnBtn:hover .columnBtnarrow{
+    transition: 0.2s ease-out !important;
+    transform: translateX(30%) !important;
+}
+
+.USP{
+    margin-top: 8%;
+}
+
+.uspHeading{
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--classicFont);
+}
+
 
 @media only screen and (max-width: 699px) {
     .hiddenformobile{

@@ -1,6 +1,7 @@
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ScrollCorrector from './components/scrollCorrector/scroll';
 import './App.css';
+import './index.css';
 import './components/Navbar/Navbar.css';
 
 import Navbar from './components/Navbar/Navbar';
