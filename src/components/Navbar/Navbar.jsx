@@ -84,7 +84,7 @@ const Navbar = () => {
           </Navigation>
 
           <Navigation>
-            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile' size='medium'>APP STATUS{/*<LaunchIcon className='launchIcon' ></LaunchIcon>*/}</StyledButtonContained>
+            <StyledButtonContained href='/#/status' className='btnContained nav-btnMobile' size='medium'>App Status{/*<LaunchIcon className='launchIcon' ></LaunchIcon>*/}</StyledButtonContained>
             <MenuIcon sx={{color:'#000' }} onClick={() => setIsDrawerOpen(true)} className='menuIcon'></MenuIcon>
           </Navigation>
 

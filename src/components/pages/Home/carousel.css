@@ -1,0 +1,29 @@
+.carousel{
+    vertical-align: middle !important;
+}
+
+.slick-slide img {
+    margin: auto;
+    width: 100%;
+    vertical-align: middle !important;
+    margin-top: 10%;
+}
+
+/* .slick-next:before {
+    color: var(--dark) !important;
+    opacity: 100%;
+    background-color: transparent;
+    font-family: 'slick';
+    height: 100px;
+    width: 100px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev{
+    display: none !important;
+}
+
+.slick-arrow:before{
+    font-size: 20px;
+} */

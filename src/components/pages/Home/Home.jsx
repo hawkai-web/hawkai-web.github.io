@@ -3,6 +3,7 @@ import { Grid, Button, Box } from "@mui/material";
 import cameraMan from '../../../assets/home/cameraMan.svg';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import './Home.css';
+import ImageSlider from './imageSlider';
 
 export default function Home() {
 
@@ -17,8 +18,9 @@ export default function Home() {
             <Button className='btnFilled heroBtn'>EXPLORE</Button>
             <Button className='btnOutline heroBtn' sx={{ marginLeft: '1%' }}>Info</Button>
             </Grid>
-            <Grid item xs={5} className="hiddenformobile">
-                <img src={cameraMan} />
+            <Grid item xs={5} className="hiddenformobile overlapCarousel">
+                {/* <img src={cameraMan} /> */}
+                <ImageSlider />
             </Grid>
           </Grid>
 
@@ -71,6 +73,10 @@ export default function Home() {
             </Grid>
           </Grid>
         </section>
+
+        <div>
+        
+        </div>
 
         <Box sx={{ height:'100vh' }}>
 

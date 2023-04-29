@@ -42,7 +42,7 @@
 }
 
 .prodDesc{
-    margin-top: 10%;
+    margin-top: 15%;
     text-align: left;
 }
 
@@ -55,19 +55,22 @@
 
 .prodDesc p{
     font-size: 1.1em;
+    margin-top: -5%;
 }
 
 .headChip{
     letter-spacing: 5px;
     font-size: 0.8em !important;
     text-transform: uppercase;
+    margin-bottom: 5%;
 }
 
 .chipHR{
     display: inline-block;
     width: 12%;
     vertical-align: middle;
-    border: 0.7px solid var(--dark)
+    border: 0.7px solid var(--dark);
+    
 }
 
 .columnText{
@@ -84,12 +87,12 @@
     font-size: 1em !important;
     vertical-align: middle;
     display: inline-block !important;
-    transition: 0.3s ease-in !important;
+    transition: 0.2s ease-in !important;
 }
 
 .columnBtn:hover .columnBtnarrow{
     transition: 0.2s ease-out !important;
-    transform: translateX(30%) !important;
+    transform: translate3d(30%, 0, 0) ;
 }
 
 .USP{
@@ -100,6 +103,13 @@
     font-size: 3em;
     text-align: center;
     font-family: var(--classicFont);
+}
+
+.overlapCarousel{
+    position: relative;
+    /* left: -10%; */
+    z-index: -10;
+    right: 0 !important;
 }
 
 

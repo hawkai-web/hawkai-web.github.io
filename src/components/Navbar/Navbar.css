@@ -12,13 +12,16 @@
 }
 
 .btnContained{
-  text-transform: none !important;
+  /* text-transform: none !important;
   background-color: var(--dark) !important;
-  color: #fff !important;
-  /* padding-block: 8% !important;
-  padding-inline: 15% !important; */
+  color: #fff !important; */
   text-align: center !important;
   font-weight: 300 !important;
+  background-color: transparent !important;
+  border: 1px solid var(--dark) !important;
+  color: #000 !important;
+  transition: 0.2s ease-in-out !important;
+  text-transform: none !important;
 }
 
 .brand{
@@ -37,6 +40,8 @@
 
 .btnContained:hover{
   background-color: var(--dark) !important;
+  color: #fff !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 .appdrawer{
@@ -72,7 +77,7 @@
 
 .nav-btn:hover{
   transition: 0.2s ease-in-out !important;
-  transform: translateY(10%) !important;
+  transform: translate3d(0, 10%, 0) !important;
 }
 
 .menuIcon{
