@@ -2,8 +2,9 @@ import React from "react";
 import { Grid, Button, Box } from "@mui/material"; 
 import cameraMan from '../../../assets/home/cameraMan.svg';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
-import './Home.css';
 import ImageSlider from './imageSlider';
+import overImage from '../../../assets/gallery/overImage.webp';
+import './Home.css';
 
 export default function Home() {
 
@@ -29,17 +30,18 @@ export default function Home() {
             <h1 className="tagline">Capturing moments so <span>you</span> dont have to!</h1>
             <div className='btnHoldermob'>
               <Button className='btnFilled heroBtn'>EXPLORE</Button>
-              <Button className='btnOutline heroBtn'>Info</Button>
+              <Button className='btnOutline heroBtn' sx={{ marginLeft:'2%' }}>Info</Button>
             </div>
+            <ImageSlider className='mobileCarousel' />
             </Grid>
           </Grid>
 
         </section>
 
         <section className="prodDesc">
-          <p className='headChip'>The revolutionary product <hr className='chipHR'></hr></p>
+          <p className='headChip hiddenformobile'>The revolutionary product <hr className='chipHR'></hr></p>
           
-          <div>
+          <div className="hiddenformobile">
             <Grid container spacing={5}>
               <Grid item xs={4}>
               <h1 className="prodDescHeading">What is HawkAI</h1>
@@ -48,16 +50,20 @@ export default function Home() {
               </p>
               <a className='columnBtn' href='/about'>Learn more <span><ArrowForwardIosRoundedIcon className='columnBtnarrow' /></span></a>
               </Grid>
-              <Grid item xs={4}>
-              <h1 className="prodDescHeading">What is HawkAI?</h1>
-              <p className='columnText'>
-                HawkAI captures candid photos effortlessly, letting you live in the moment without worrying about taking pictures. Using advanced AI technology, HawkAI automatically adjusts the camera settings to capture stunning, natural shots that truly capture the essence of the moment. Whether you're on a romantic date, traveling to a new place, or spending time with loved ones, HawkAI ensures that you never miss a moment. Experience life to the fullest and let HawkAI capture memories that will last a lifetime.
-              </p>
-              </Grid>
-              <Grid item xs={4}>
-              <h1 className="prodDescHeading">What is HawkAI?</h1>
+              <Grid item xs={8}>
+                <img src={overImage} alt='over_image' className="overImage" />
               </Grid>
             </Grid>
+          </div>
+
+          <div className='hiddenforlaptop'>
+            <p className="headChip headChipMobile">The revolutionary product </p>
+            <h1 className="prodDescHeading prodDescHeadingMobile">What is HawkAI</h1>
+            <p className='mobilePara'>
+            HawkAI captures candid photos effortlessly, letting you live in the moment without worrying about taking pictures. Using advanced AI technology, HawkAI automatically adjusts the camera settings to capture stunning, natural shots that truly capture the essence of the moment. Whether you're on a romantic date, traveling to a new place, or spending time with loved ones, HawkAI ensures that you never miss a moment. Experience life to the fullest and let HawkAI capture memories that will last a lifetime.
+            </p>
+            <a className='columnBtn' href='/about'>Learn more <span><ArrowForwardIosRoundedIcon className='columnBtnarrow' /></span></a>
+            <img src={overImage} alt='over_image' className="overImage overImageMobile" />
           </div>
           
         </section>

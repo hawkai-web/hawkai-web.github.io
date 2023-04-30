@@ -107,9 +107,37 @@
 
 .overlapCarousel{
     position: relative;
-    /* left: -10%; */
+    left: -5%;
     z-index: -10;
     right: 0 !important;
+}
+
+.overImage{
+    width: 100%;
+}
+
+.mobileCarousel{
+    position: absolute;
+    top: 0;
+}
+
+.headChipMobile{
+    text-align: center;
+}
+
+.prodDescHeadingMobile{
+    font-size: 3em;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.mobilePara{
+    line-height: 22px;
+    text-align: justify;
+}
+
+.overImageMobile{
+    margin-top: 10%;
 }
 
 
