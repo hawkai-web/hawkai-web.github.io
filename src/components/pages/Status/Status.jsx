@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../../../logo.svg';
 import '../Home/Home.css';
 
 export default function Home() {

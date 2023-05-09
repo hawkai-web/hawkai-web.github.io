@@ -1,0 +1,51 @@
+.contactPage{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1.8% !important;
+}
+
+.contactHeading{
+    text-align: center;
+    font-family: var(--classicFont);
+    text-transform: uppercase;
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+.inputField, textarea{
+    border: 1px solid var(--dark);
+    border-radius: none ;
+    background-color: var(--bodyBG);
+    color: var(--dark);
+}
+
+.nameHolder{
+    width: 100% !important;
+}
+
+input, textarea{
+    outline-width: 0px;
+    outline: none;
+    box-shadow: none;
+    margin-inline: 0%;
+    height: 30px;
+    font-size: 16px;
+    padding-block: 2%;
+    padding-inline: 4%;
+}
+
+input, textarea:focus{
+    outline-width: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--dark);
+    opacity: 1; /* Firefox */
+  }
+
+  textarea{
+    width: 80%;
+  }
+  

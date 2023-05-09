@@ -12,6 +12,7 @@ html{
   --notoFont: 'Noto Serif', serif;
   --orange: rgb(247 147 98);
   --dark: rgb(37 37 37);
+  --pink: #de6b94;
 }
 
 ::-webkit-scrollbar {

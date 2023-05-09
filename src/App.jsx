@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollCorrector from './components/scrollCorrector/scroll';
 import './App.css';
 import './index.css';
@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from '../src/components/pages/Home/Home';
 import Status from '../src/components/pages/Status/Status';
 import Contact from '../src/components/pages/Contact/Contact';
+import Footer from '../src/components/pages/Footer/Footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route path="/status" element={<Status />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
         </ScrollCorrector>
     </Router>
   );

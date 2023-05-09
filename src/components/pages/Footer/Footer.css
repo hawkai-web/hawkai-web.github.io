@@ -1,0 +1,61 @@
+.footerPage{
+    padding: 1%
+}
+
+.footerHeading{
+    font-family: var(--classicFont);
+    display: inline-block;
+}
+
+.getBtn{
+    background-color: var(--dark) !important;
+    color: #fff !important;
+    border-radius: 50em;
+    padding-block: 2%;
+    padding-inline: 5%;
+}
+
+.footerLogo{
+    width: 8%;
+    vertical-align: middle;
+}
+
+.footerPage p{
+    margin-top: -2%;
+    font-size: 0.8em;
+}
+
+.bottomFooter{
+    margin-top: 5%;
+    vertical-align: middle;
+}
+
+.socialIcon{
+    background-color: var(--dark);
+    color: var(--bodyBG);
+    padding: 2%;
+    border-radius: 100%;
+    margin-inline: 1%;
+}
+
+.topIcon{
+    padding: 2%;
+    background-color: var(--bodyBG);
+    border: 1px solid var(--dark);
+    color: var(--dark);
+    border-radius: 100%;
+}
+
+.topBtn{
+    transition: 0.2s ease-in !important;
+}
+
+.topBtn:hover .topIcon{
+    transition: 0.2 ease-in-out;
+    transform: translate3d(0 10% 0) !important;
+}
+
+.footerHR{
+    margin-top: -3%;
+    border: 0.7px solid var(--dark);
+}
