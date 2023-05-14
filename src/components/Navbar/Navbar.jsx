@@ -78,7 +78,7 @@ const Navbar = () => {
           <Navigation>
             <StyledButton disableRipple href='/' className='btn nav-btn nav-btnMobile'>Home </StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Features</StyledButton>
-            <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >About</StyledButton>
+            <StyledButton disableRipple href='/#/about' className='btn nav-btn nav-btnMobile' >About</StyledButton>
             <StyledButton disableRipple href='/#/' className='btn nav-btn nav-btnMobile' >Gallery</StyledButton>
             <StyledButton disableRipple href='/#/contact' className='btn nav-btn nav-btnMobile' >Contact</StyledButton>
           </Navigation>

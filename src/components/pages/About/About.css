@@ -1,0 +1,29 @@
+.aboutPage{
+    padding: 5%;
+}
+
+.about-heading{
+    font-family: var(--classicFont);
+    font-size: 6em;
+    text-align: left;
+    margin-top: 8%;
+    font-weight: 500;
+}
+
+.aboutText{
+    font-size: 0.9em;
+}
+
+.sub-headText{
+    font-weight: 500;
+}
+
+.gridHead{
+    font-weight: 600;
+    font-size: 2.5em;
+    font-family: var(--classicFont);
+}
+
+.imgAbout{
+    width: 100%;
+}

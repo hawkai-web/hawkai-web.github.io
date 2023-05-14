@@ -1,14 +1,17 @@
 import React from "react";
-import { Grid, Button, Box } from "@mui/material"; 
+import { Grid, Button } from "@mui/material"; 
 // import cameraMan from '../../../assets/home/cameraMan.svg';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ImageSlider from './imageSlider';
+import Tabs from './tabs';
 import overImage from '../../../assets/gallery/overImage.webp';
 import LinkedCameraIcon from '@mui/icons-material/LinkedCamera';
 import AdbIcon from '@mui/icons-material/Adb';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AppShortcutIcon from '@mui/icons-material/AppShortcut';
+import ShopIcon from '@mui/icons-material/Shop';
+import AppleIcon from '@mui/icons-material/Apple';
 import './Home.css';
 
 
@@ -30,7 +33,6 @@ export default function Home() {
             <Button className='btnOutline heroBtn' sx={{ marginLeft: '1%' }}>Info</Button>
             </Grid>
             <Grid item xs={5} className="hiddenformobile overlapCarousel">
-                {/* <img src={cameraMan} /> */}
                 <ImageSlider />
             </Grid>
           </Grid>
@@ -53,7 +55,7 @@ export default function Home() {
 
       {/*  PRODUCT DESCRIPTION  */}
         <section className="prodDesc">
-          <p className='headChip hiddenformobile'>The revolutionary product <hr className='chipHR'></hr></p>
+          <p className='headChip hiddenformobile'>The revolutionary product <hr className='chipHR' /></p>
           
           <div className="hiddenformobile">
             <Grid container spacing={5}>
@@ -82,6 +84,13 @@ export default function Home() {
             <img src={overImage} alt='over_image' className="overImage overImageMobile" />
           </div>
           
+        </section>
+
+        {/* HOW OUR PRODUCT WORKS */}
+        <section className="howItWorks">
+          <p className='headChip hiddenformobile'>The Technology <hr className='chipHR'></hr></p>
+          <h1 className="howDescHeading">How it works</h1>
+          <Tabs></Tabs>
         </section>
 
 
@@ -128,12 +137,13 @@ export default function Home() {
         </section>
 
 
-
-
-
-        <Box sx={{ height:'100vh' }} >
-
-        </Box>
+      {/* CALL TO ACTION */}
+      <section className='CTA'>
+        <p className="headChip headChipMobile"><hr className='chipHR' /> Level up your Photography <hr className='chipHR' /></p>
+        <h1 className="CTADescHeading">Download HawkAI</h1>
+        <Button className='btnFilled cta-btn'><ShopIcon /> &nbsp; Play Store</Button>
+        <Button className='btnFilled cta-btn' sx={{ marginLeft: '1%' }}><AppleIcon /> &nbsp; App Store</Button>
+      </section>
 
 
       </div>

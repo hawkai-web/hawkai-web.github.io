@@ -7,6 +7,7 @@ import './components/Navbar/Navbar.css';
 import Navbar from './components/Navbar/Navbar';
 
 import Home from '../src/components/pages/Home/Home';
+import About from '../src/components/pages/About/About';
 import Status from '../src/components/pages/Status/Status';
 import Contact from '../src/components/pages/Contact/Contact';
 import Footer from '../src/components/pages/Footer/Footer';
@@ -19,6 +20,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/status" element={<Status />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
