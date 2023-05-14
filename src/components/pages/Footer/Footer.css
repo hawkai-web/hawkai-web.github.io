@@ -1,6 +1,6 @@
 .footerPage{
     padding: 1%;
-    margin-top: 3%;
+    margin-top: 0%;
 }
 
 .copyright{
@@ -8,4 +8,5 @@
     font-size: 0.8em;
     margin-bottom: 0.8%;
     color: #3a3a3a;
+    margin-top: 5%;
 }

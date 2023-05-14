@@ -27,3 +27,49 @@
 .imgAbout{
     width: 100%;
 }
+
+.gridIconHolderLEFT{
+    text-align: center;
+    color: #fff;
+    padding-block: 5%;
+    border-top-left-radius: 100em;
+    border-bottom-left-radius: 100em;
+    vertical-align: middle !important;
+    vertical-align: auto !important;
+}
+
+.gridIconHolderRIGHT{
+    text-align: center;
+    color: #fff;
+    padding-block: 5%;
+    border-top-right-radius: 100em;
+    border-bottom-right-radius: 100em;
+    vertical-align: middle !important;
+    vertical-align: auto !important;
+}
+
+.gridTempText{
+    padding-block: 0%;
+    padding-inline: 2%;
+}
+
+.stateTitle{
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.statement{
+    margin-top: 2%;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.text-small{
+    font-size: 0.8em;
+}
+
+
+

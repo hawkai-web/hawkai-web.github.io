@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Button } from "@mui/material"; 
-// import cameraMan from '../../../assets/home/cameraMan.svg';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 import ImageSlider from './imageSlider';
 import Tabs from './tabs';
@@ -10,8 +9,6 @@ import AdbIcon from '@mui/icons-material/Adb';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import AppShortcutIcon from '@mui/icons-material/AppShortcut';
-import ShopIcon from '@mui/icons-material/Shop';
-import AppleIcon from '@mui/icons-material/Apple';
 import './Home.css';
 
 
@@ -64,7 +61,7 @@ export default function Home() {
               <p className='columnText'>
                 HawkAI captures candid photos effortlessly, letting you live in the moment without worrying about taking pictures. Using advanced AI technology, HawkAI automatically adjusts the camera settings to capture stunning, natural shots that truly capture the essence of the moment. Whether you're on a romantic date, traveling to a new place, or spending time with loved ones, HawkAI ensures that you never miss a moment. Experience life to the fullest and let HawkAI capture memories that will last a lifetime.
               </p>
-              <a className='columnBtn' href='/#'>Learn more <span><ArrowForwardIosRoundedIcon className='columnBtnarrow' /></span></a>
+              <a className='columnBtn' href='/#/about'>Learn more <span><ArrowForwardIosRoundedIcon className='columnBtnarrow' /></span></a>
               </Grid>
               <Grid item xs={8}>
                 <div className="graph" style={{ padding:'2%' }}>
@@ -136,14 +133,6 @@ export default function Home() {
         
         </section>
 
-
-      {/* CALL TO ACTION */}
-      <section className='CTA'>
-        <p className="headChip headChipMobile"><hr className='chipHR' /> Level up your Photography <hr className='chipHR' /></p>
-        <h1 className="CTADescHeading">Download HawkAI</h1>
-        <Button className='btnFilled cta-btn'><ShopIcon /> &nbsp; Play Store</Button>
-        <Button className='btnFilled cta-btn' sx={{ marginLeft: '1%' }}><AppleIcon /> &nbsp; App Store</Button>
-      </section>
 
 
       </div>
