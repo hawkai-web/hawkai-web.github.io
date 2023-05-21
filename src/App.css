@@ -1,0 +1,37 @@
+.text-center{
+    text-align: center;
+}
+
+.classic-font{
+    font-family: var(--classicFont);
+}
+
+.right-align{
+    text-align: right;
+}
+
+.text-small{
+    font-size: 0.8em;
+}
+
+.weight-600{
+    font-weight: 600;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 699px) {
+    .hiddenformobile{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .hiddenforlaptop{
+      display: none !important;
+    }
+}
+

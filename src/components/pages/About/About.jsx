@@ -12,7 +12,7 @@ function About() {
   return (
     <div className='aboutPage'>
 
-        <section>
+        <section className='hiddenformobile'>
             <h1 className='about-heading'>About us.</h1>
             <Grid container>
                 <Grid item xs={5}>
@@ -49,7 +49,7 @@ function About() {
             </Grid>
         </section>
 
-        <section style={{ marginTop: '8%' }}>
+        <section style={{ marginTop: '8%' }} className='hiddenformobile'>
             <p className='headChip headChipMobile'><hr className='chipHR'/> THE VISION <hr className='chipHR'/></p>
             <Grid container spacing={4}>
                 <Grid item xs={4}>
@@ -73,8 +73,8 @@ function About() {
             </Grid>
         </section>
 
-
-        <section>
+        {/* PROBLEM STATEMENT */}
+        <section className='hiddenformobile'>
             <p className='headChip' style={{ marginTop: '8%' }}>The Problem statement <hr className='chipHR'/></p>
 
             <Grid container>
@@ -151,6 +151,34 @@ function About() {
                 
             </Grid>
             
+        </section>
+
+        {/* MOBILE ONLY VIEW */}
+        <section className='hiddenforlaptop'>
+            <h1 className='text-center classic-font' style={{ fontSize: '3em' }}>About us.</h1>
+            <p className='text-small text-center weight-600' style={{ marginTop: '-5%' }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor aliquam est sed finibus. Nunc a euismod ante. In pharetra nibh a enim hendrerit finibus. 
+            </p>
+            <img src={imgAbout} alt='write' style={{ width: '100%' }} />
+            <p style={{ marginTop: '25%' }} >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor aliquam est sed finibus. Nunc a euismod ante. In pharetra nibh a enim hendrerit finibus. Donec lectus odio, semper id nisl eu, congue euismod diam. Proin viverra ut magna in ultricies. Ut luctus interdum sem eget vestibulum. Proin ut malesuada ipsum, vitae ornare urna. Quisque ligula arcu, porttitor id fringilla a, dictum ac eros. Maecenas vel felis diam. Curabitur sollicitudin lorem at risus consectetur, consequat posuere lacus posuere. Integer magna velit, aliquet ac nisl vitae, volutpat vehicula felis. Quisque rutrum, magna sed cursus aliquet, ligula nisl interdum felis, id maximus tellus tellus in sem. Donec vel justo facilisis, tristique dolor at, tristique nibh.
+            </p>
+
+            <img src={imgCam} alt='camera man' style={{ width: '100%' }} />
+
+            <h1 className='classic-font' style={{ marginTop: '17%' }}>
+                The importance of candid pictures
+            </h1>
+            <p style={{ marginTop: '8%' }} >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor aliquam est sed finibus. Nunc a euismod ante. In pharetra nibh a enim hendrerit finibus. Donec lectus odio, semper id nisl eu, congue euismod diam. Proin viverra ut magna in ultricies. Ut luctus interdum sem eget vestibulum. Proin ut malesuada ipsum, vitae ornare urna. Quisque ligula arcu, porttitor id fringilla a, dictum ac eros. Maecenas vel felis diam. Curabitur sollicitudin lorem at risus consectetur, consequat posuere lacus posuere. Integer magna velit, aliquet ac nisl vitae, volutpat vehicula felis. Quisque rutrum, magna sed cursus aliquet, ligula nisl interdum felis, id maximus tellus tellus in sem. Donec vel justo facilisis, tristique dolor at, tristique nibh.
+            </p>
+
+            <p className='headChip headChipMobile' style={{ marginTop: '20%' }}>THE PROBLEM STATEMENT</p>
+            <Grid container>
+                <Grid item xs={12} style={{ backgroundColor: '#9dcbeb56', paddingInline: '5%', borderRadius: '0.4em' }}>
+                    <p className='stateTitle'><LightbulbOutlinedIcon /> PROBLEM STATEMENT</p>
+                </Grid>
+            </Grid>
         </section>
 
     </div>

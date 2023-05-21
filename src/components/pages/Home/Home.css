@@ -260,6 +260,47 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 0.8em;
 }
 
+.forestBG{
+    background-image: url(../../../assets/home/forestBG.webp);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */
+    background-clip: content-box;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.banner-btn{
+    background-color: rgb(230, 230, 230) !important;
+    text-transform: none !important;
+    padding-inline: 10% !important;
+    padding-block: 5% !important;
+    color: #000 !important;
+    border-radius: 100em !important;
+    transition: 0.2s ease-in-out !important;
+    
+}
+
+.banner-btn:hover{
+    background-color: rgb(222, 222, 222) !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.banner-button-holder{
+    vertical-align: middle !important;
+    justify-content: center !important;
+    align-content: center !important;
+    text-align: center;
+    position: relative !important;
+    top: 50% !important;
+    bottom: 50% !important;
+    display: inline-block !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+
 
 
 @media only screen and (max-width: 699px) {
@@ -286,5 +327,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
       display: none !important;
     }
   }
-
 
